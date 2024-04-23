@@ -1,0 +1,20 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    --background-color: rgb(240, 240, 240);
+    --text-color: black;
+
+    --panel-color: rgb(24, 24, 24);
+    --panel-text-color: white;
+    --panel-color-hover: rgb(82, 82, 82);
+    --panel-text-color-hover: rgb(255, 255, 255);
+
+    --button-background-color: red;
+    --button-text-color: black;
+
+    background-color: var(--background-color);
+}

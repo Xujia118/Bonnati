@@ -1,0 +1,48 @@
+.address-main-wrapper {
+    margin: 4rem;
+}
+
+.cards-address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-address {
+    width: 20rem;
+    height: 20rem;
+
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 20px;
+    
+    list-style: none;
+
+    padding: 0; 
+    margin: 0;
+}
+
+.card-address.add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px dotted rgb(212, 212, 212);
+}
+
+.card-address.add:hover {
+    cursor: pointer;
+}
+
+.card-item {
+    padding: 0.5rem 1rem;
+}
+
+.add-icon {
+    display: inline-block;
+    width: 30%;
+}
+
+.add-text {
+    display: block;
+}
+

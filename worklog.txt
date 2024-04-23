@@ -1,0 +1,82 @@
+// A visitor can see all menu and filter menu without login
+
+// When he clicks add to cart on any dish, login form is offered. Logged in status makes it possible to build a cart
+// Before checkout out cart, inquire online or instore
+// If user chooses online, check if there is an address
+// If user has address, we offer that address as default, but we also allow add a new address
+// Otherwise, prompt the user to fill an address form
+// After an order is placed, it can be canceled before accepted status becomes true;
+// A logged in user can see orders history
+
+Plan and test data models
+Write apis and service calls
+Build frontend
+
+4.1
+Made data models
+
+4.8
+Changed from ts to js
+Drafted apis and service calls
+
+4.9
+Update users object. We need user id for scalability
+Update other models and functions
+First, get menu display and filter
+Then, get login
+
+4.10 
+Make login/logout modal
+Make Login modal window should not open again if user is already logged in
+Make conditonally rendering pages
+Refactored users logic. We can actually only rely on username to retrieve all user info
+
+4.11
+Make addToCart and getCart work
+Cart is an object
+Search
+
+4.12
+Made cart in backend
+Moved header to app, useRef as well
+Make cart in frontend
+At cart page, we should be able to go back to menu
+At logout, we should go back to menu pages
+Header search bar should work, and put it inside the input box, using an icon such as glasses
+The - + buttons should change quantity, subtotal and total. We just recalculate all
+
+4.13
+Make orders apis/services
+At checkout, we should ask user whether they dine on spot or order delivery
+Make profile apis/services
+Make profile page
+Make hamburger menu for better UI
+
+4.14
+Checkout "Your order is being processed" and return to menu after 3 seconds
+Render cart button with number of items inside
+Checkout should also clear cart
+At refresh, address is lost
+Make orders history page
+If search doesn't find any items, should give a message
+
+4.15 
+At logout, reset cart state
+At login, we should retrieve current cart
+Make Header sticky
+Removed modal window. It had to be incorporated in all components to work.
+Except menu, user without sid should not be granted access to any other content. They should be directed to login
+Fixed cart count error at login
+Orders should be sorted in descending order
+hamburger menu will close onBlur
+
+4.16
+Add all the error messages
+Make dropmenu close when mouse leaves
+Forbid placing orders when all cart items are zero.
+
+
+Didn't do:
+When choosing delivery, verify if user has a valid address
+Add pagination to menu 
+On refresh, the page would go back to menu instead of staying in cart if we are in cart
