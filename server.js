@@ -12,7 +12,7 @@ const orders = require("./models/orders");
 const info = require("./models/info");
 
 // Middleware
-// app.use(express.static("./dist"));
+app.use(express.static("./dist"));
 app.use(cookieParser());
 app.use(express.json());
 
