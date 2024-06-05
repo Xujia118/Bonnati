@@ -54,7 +54,9 @@ function Header({
         <button className="button-home" onClick={() => setPage("menu")}>
           <img className="home-icon" src={HomeIcon} alt="homepage" />
         </button>
-        <h1 className="logo-title">Bonnati</h1>
+        <button className="button-home" onClick={() => setPage("menu")}>
+          <h1 className="logo-title">Bonnati</h1>
+        </button>
       </div>
       <div className="search-container">
         <form className="form-search" onSubmit={handleSubmit}>
