@@ -60,7 +60,7 @@ function Header({
         <form className="form-search" onSubmit={handleSubmit}>
           <input
             type="text"
-            className="search"
+            className="input-search"
             placeholder="Search a dish..."
             onChange={(e) => setQuery(e.target.value)}
           />

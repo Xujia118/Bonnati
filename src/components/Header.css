@@ -1,6 +1,6 @@
 header {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
     background-color: rgb(50, 50, 50);
@@ -12,23 +12,11 @@ header {
     top: 0;
 }
 
-.logo-container {
-    grid-column: 3 span;
-
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.search-container {
-    grid-column: 6 span;
-
-    display: flex;
-    justify-content: center;
-}
-
 .logo-title {
+    display: none;
     margin: 0;
 }
+
 
 .home-icon, .account-icon {
     width: 2rem;
@@ -47,10 +35,10 @@ header {
     position: relative;
 }
 
-.search {
-    font-size: 1rem;
-
+.input-search {
     padding: 0.5rem;
+    
+    font-size: 1rem;
 }
 
 .search-icon {
@@ -61,10 +49,8 @@ header {
 }
 
 .control-container {
-    grid-column: 3 span;
-
     display: flex;
-    justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .button-cart {
@@ -74,6 +60,10 @@ header {
     color: white;
 
     font-size: 1rem;
+}
+
+.button-menu {
+    display: none;
 }
 
 .dropmenu {
@@ -105,4 +95,26 @@ header {
 .menu-item:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media (min-width: 44rem) {
+    header {
+        justify-content: space-evenly;
+    }
+
+    .button-home {
+        display: none;
+    }
+
+    .logo-title {
+        display: block;
+    }
+
+    .input-search {
+        width: 25rem;
+    }
+
+    .button-menu {
+        display: initial;
+    }
 }

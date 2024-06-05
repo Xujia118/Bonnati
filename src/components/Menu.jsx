@@ -23,7 +23,7 @@ function Menu({
   }
 
   return (
-    <div className="page-menu-wrapper">
+    <>
       <div className="sidebar-menu">
         <button
           className="button-sidebar"
@@ -75,7 +75,7 @@ function Menu({
           <p>No result found</p>
         )}
       </div>
-    </div>
+    </>
   );
 }
 

@@ -6,10 +6,8 @@
 }
 
 .sidebar-menu {
-    grid-column: 2 span;
-
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 
     background-color:rgb(62, 62, 62); 
 }
