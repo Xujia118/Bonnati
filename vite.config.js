@@ -7,7 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "bonnati.up.railway.app",
+        // target: "bonnati.up.railway.app",
+        target: "http://localhost:3000",
       },
     },
   },

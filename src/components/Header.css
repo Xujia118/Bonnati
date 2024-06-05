@@ -1,4 +1,9 @@
 header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,22 +17,29 @@ header {
     top: 0;
 }
 
-.logo-title {
-    display: none;
-    margin: 0;
+.button-home {
+    display: initial;
 }
 
+.button-title {
+    display: none;
+    color: white;
+}
+
+.logo-title {
+    margin: 0;
+}
 
 .home-icon, .account-icon {
     width: 2rem;
 }
 
-.button-home, .button-search, .button-cart, .button-menu {
+.button-home, .button-title, .button-search, .button-cart, .button-menu {
     background: none;
     border: none;
 }
 
-.button-home, .button-search, .button-cart, .button-menu:hover {
+.button-home, .button-title, .button-search, .button-cart, .button-menu:hover {
     cursor: pointer;
 }
 
@@ -50,6 +62,7 @@ header {
 
 .control-container {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -87,9 +100,12 @@ header {
 }
 
 .menu-list.show {
+    width: 5rem;
     height: auto;
     
-    visibility: initial;
+    visibility: visible;
+    right: 0;
+    top: 3rem;
 }
 
 .menu-item:hover {
@@ -97,13 +113,26 @@ header {
     text-decoration: underline;
 }
 
+.sidebar-menu {
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(62, 62, 62);
+
+    top: 4rem;
+}
+
 @media (min-width: 44rem) {
-    header {
+    nav {
         justify-content: space-evenly;
     }
 
     .button-home {
         display: none;
+    }
+
+    .button-title {
+        display: initial;
     }
 
     .logo-title {

@@ -12,10 +12,6 @@ function Menu({
 }) {
   const filteredMenu = handleFilter(filter);
 
-  function handleOnclick(e) {
-    setFilter(e.target.name);
-  }
-
   function handleAddToCart(dishId, operator) {
     loginStatus === LOGIN_STATUS.IS_LOGGED_IN
       ? onUpdateCart({ dishId, operator })
@@ -24,33 +20,6 @@ function Menu({
 
   return (
     <>
-      <div className="sidebar-menu">
-        <button
-          className="button-sidebar"
-          name="brunch"
-          onClick={handleOnclick}
-        >
-          Brunch
-        </button>
-        <button className="button-sidebar" name="lunch" onClick={handleOnclick}>
-          Lunch
-        </button>
-        <button
-          className="button-sidebar"
-          name="dinner"
-          onClick={handleOnclick}
-        >
-          Dinner
-        </button>
-        <button
-          className="button-sidebar"
-          name="happyHour"
-          onClick={handleOnclick}
-        >
-          Happy Hour
-        </button>
-      </div>
-
       <div className="cards">
         {filteredMenu.length > 0 ? (
           filteredMenu.map((dish) => (

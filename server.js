@@ -78,7 +78,7 @@ app.delete("/api/v1/session", (req, res) => {
 
 // Menu
 app.get("/api/v1/menu", (req, res) => {
-  const menu = dishes.getMenu();
+  const menu = dishes.getMenu(); 
   res.json({ menu });
 });
 
