@@ -208,6 +208,7 @@ function App() {
     <>
       <Header
         loginStatus={loginStatus}
+        page={page}
         setPage={setPage}
         setFilter={setFilter}
         onLogout={onLogout}
